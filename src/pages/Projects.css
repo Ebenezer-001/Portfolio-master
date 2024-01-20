@@ -1,0 +1,95 @@
+.projects {
+  padding: 30px;
+  position: relative;
+  animation: fadein 0.5s linear;
+  padding-top: 90px;
+}
+.projects h1 {
+  font-size: 80px;
+  color: whitesmoke;
+  opacity: 0.5;
+  text-align: center;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 30px;
+}
+.box {
+  width: 350px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: 0 0 20px #36454f;
+}
+.box:hover img,
+.box:hover .text {
+  opacity: 0.5;
+}
+.box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.box .text {
+  padding: 20px;
+  padding-bottom: 30px;
+  transition: 0.5s;
+}
+.box h2 {
+  font-weight: normal;
+  color: wheat;
+}
+.box p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.box .links {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  background: wheat;
+  background: linear-gradient(rgba(255, 255, 255, 0.8) 1%, wheat 99%);
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -200px;
+  height: 200px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.box:hover .links {
+  bottom: -65px;
+  opacity: 1;
+}
+.links a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: black;
+  gap: 10px;
+  transition: 0.3s;
+}
+.links a:hover {
+  color: brown;
+}
+
+@media screen and (max-width: 700px) {
+  .projects h1 {
+    font-size: 40px;
+  }
+  .box {
+    width: 90%;
+    margin: auto;
+  }
+}

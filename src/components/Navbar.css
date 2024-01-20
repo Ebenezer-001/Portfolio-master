@@ -1,0 +1,129 @@
+nav {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  height: 10vh;
+  background: black;
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+}
+.logo {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font-size: 30px;
+  border: 1px solid grey;
+  display: grid;
+  place-items: center;
+  transition: 0.3s;
+  font-family: serif;
+}
+.logo:hover {
+  background: white;
+  color: black;
+}
+nav a {
+  color: white;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+nav ul li a {
+  transition: 0.3s;
+  position: relative;
+}
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  border: 1px solid black;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  transition: 0.3s;
+}
+nav ul li a:hover::before {
+  border-color: white;
+  width: 75%;
+}
+nav ul li a.active {
+  opacity: 0.7;
+}
+nav ul li a.active::before {
+  border-color: white;
+  width: 75%;
+}
+nav ul li a:hover {
+  opacity: 0.7;
+}
+.resume {
+  border: 1px solid wheat;
+  padding: 5px 8px;
+  font-size: 14px;
+  transition: 0.3s;
+  color: wheat;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+.resume:hover {
+  background: grey;
+}
+.menu {
+  display: none;
+  font-size: 20px;
+}
+.nav-resume {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    padding: 0 30px;
+    z-index: 3;
+  }
+  nav ul {
+    position: absolute;
+    width: 100vw;
+    background: black;
+    right: 0;
+    top: 10vh;
+    flex-direction: column;
+    gap: 20px;
+    height: 0;
+    padding: 0;
+    text-align: center;
+    transition: 0.3s;
+    border-top: 1px solid gray;
+    overflow: hidden;
+  }
+  .open {
+    padding: 30px;
+    height: 40vh;
+  }
+  .logo {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+  .resume {
+    display: none;
+  }
+  .menu {
+    display: grid;
+    place-items: center;
+  }
+  .nav-resume {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+  }
+}
