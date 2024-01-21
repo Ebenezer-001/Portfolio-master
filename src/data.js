@@ -6,8 +6,8 @@ export const projects = [
     title: "REST Countries API",
     description:
       "A website that utilizes the REST countries API to display up to 200 countries from across the world along with extra details about each of them; built with React hooks and React router",
-    link: "https://obinna-restcountries.netlify.app",
-    repo: "https://github.com/acha-jr/REST-Countries-API.git",
+    link: "https://countries-101.vercel.app/",
+    repo: "https://github.com/Ebenezer-001/REST-Countries-API-master",
   },
 
   {
@@ -17,8 +17,8 @@ export const projects = [
     title: "URL shortener",
     description:
       "A website that integrates with the shrtcode URL shortening API to create shortened links; built with HTML, CSS and Javascript with the fetch method",
-    link: "https://obinna-url.netlify.app/",
-    repo: "https://github.com/acha-jr/FrontendMentor-URL-Shortening-landing-page.git",
+    link: "https://url-shortening-landing-page-two.vercel.app/",
+    repo: "https://github.com/Ebenezer-001/FrontendMentor-URL-Shortening-landing-page-main",
   },
 
   {
@@ -28,8 +28,8 @@ export const projects = [
     title: "Rock Paper Scissors",
     description:
       "A rock, paper, scissors game from Frontend Mentor; built using HTML, CSS and Javascript.",
-    link: "https://obinna-rps.netlify.app/",
-    repo: "https://github.com/acha-jr/FrontendMentor-Rock-Paper-Scissors.git",
+    link: "https://rock-paper-scissors-beta-flax.vercel.app/",
+    repo: "https://github.com/Ebenezer-001/FrontendMentor-Rock-Paper-Scissors-main",
   },
 
   {
@@ -39,8 +39,8 @@ export const projects = [
     title: "Job List Filtering",
     description:
       "Built with React, a job listing page that allows a user to filter jobs depending on the role, level, language or tools",
-    link: "https://obinna-jobs.netlify.app",
-    repo: "https://github.com/acha-jr/Job-List-Filtering.git",
+    link: "https://job-list-filtering-psi.vercel.app/",
+    repo: "https://github.com/Ebenezer-001/Job-List-Filtering-master",
   },
 
   {
@@ -50,8 +50,8 @@ export const projects = [
     title: "IP Address Tracker",
     description:
       "A web application that monitors the location of an IP address, integrated with IP Geolocation API by IPify and leafletJS for the mapping; built with HTML, CSS and Javascript using the FetchAPI",
-    link: "https://obinna-ip.netlify.app/",
-    repo: "https://github.com/acha-jr/FrontendMentor-IP-Address-Tracker.git",
+    link: "https://ip-address-tracker-weld.vercel.app/",
+    repo: "https://github.com/Ebenezer-001/FrontendMentor-IP-Address-Tracker-main",
   },
 
   {
@@ -61,7 +61,7 @@ export const projects = [
     title: "Bookmark Landing Page",
     description:
       "A simple landing page from Frontend Mentor built with HTML, CSS and Javascript; contains an accordion and tabbed features section.",
-    link: "https://obinna-bookmark.netlify.app/",
-    repo: "https://github.com/acha-jr/Frontendmentor-bookmark-landing-page.git",
+    link: "https://bookmark-landing-page-lilac.vercel.app/",
+    repo: "https://github.com/Ebenezer-001/Frontendmentor-bookmark-landing-page-main",
   },
 ];
